@@ -94,7 +94,8 @@ async def on_message(message):
         else:
             db["responding"] = False
             await message.channel.send("Responding is off.")
-
+    if msg.startswith("yeet"):
+     await message.channel.send("https://tenor.com/bf63y.gif")
 
 keep_alive()
 client.run(os.getenv('TOKEN'))
